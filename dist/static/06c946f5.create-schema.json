@@ -1,0 +1,91 @@
+[
+  {
+    "fields": [
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "name"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "of": [
+          {
+            "type": "image"
+          }
+        ],
+        "name": "images",
+        "type": "array"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "type": "number"
+      }
+    ],
+    "name": "product",
+    "type": "document",
+    "title": "Products"
+  },
+  {
+    "fields": [
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "price",
+                "type": "number"
+              },
+              {
+                "name": "quantity",
+                "type": "number"
+              },
+              {
+                "name": "productId",
+                "type": "string",
+                "title": "Product ID"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "items",
+        "type": "array"
+      },
+      {
+        "name": "total",
+        "type": "number",
+        "title": "Total Price"
+      },
+      {
+        "name": "createdAt",
+        "type": "datetime"
+      }
+    ],
+    "name": "order",
+    "type": "document",
+    "title": "Orders"
+  }
+]
