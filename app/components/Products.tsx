@@ -29,7 +29,7 @@ const Products = async () => {
                         <Image
                           src={urlFor(image).url()}
                           alt={product.slug}
-                          width={220}
+                          width={220} 
                           height={100}
                           className="object-cover h-32 mx-auto"
                         />
