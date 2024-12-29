@@ -30,7 +30,7 @@ const Hero = () => {
                 alt="banner"
                 width={400}
                 height={50}
-                style={{ height: "auto", width: "100%" }}
+             
               />
             </motion.div>
           </div>
