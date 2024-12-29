@@ -37,7 +37,7 @@ const Products = async () => {
                       <div className="text-center py-10">
                         <h1 className="text-2xl font-bold">{product.name}</h1>
                         <h1 className="text-xl text-gray text-gray-500">
-                          ${product.price}
+                          {product.price} S.P
                         </h1>
                       </div>
                     </div>
